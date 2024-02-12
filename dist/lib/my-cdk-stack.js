@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MyCDKStack = void 0;
+const cdk = require("@aws-cdk/core");
+const my_cdk_app_stack_1 = require("./my-cdk-app-stack");
+class MyCDKStack extends cdk.Stack {
+    constructor(scope, id, props) {
+        super(scope, id, props);
+        new my_cdk_app_stack_1.MyCDKAppStack(this, 'MyCDKAppStack');
+    }
+}
+exports.MyCDKStack = MyCDKStack;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibXktY2RrLXN0YWNrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vbXktY2RrLXN0YWNrLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLHFDQUFxQztBQUNyQyx5REFBbUQ7QUFFbkQsTUFBYSxVQUFXLFNBQVEsR0FBRyxDQUFDLEtBQUs7SUFDdkMsWUFBWSxLQUFvQixFQUFFLEVBQVUsRUFBRSxLQUFzQjtRQUNsRSxLQUFLLENBQUMsS0FBSyxFQUFFLEVBQUUsRUFBRSxLQUFLLENBQUMsQ0FBQztRQUV4QixJQUFJLGdDQUFhLENBQUMsSUFBSSxFQUFFLGVBQWUsQ0FBQyxDQUFDO0lBQzNDLENBQUM7Q0FDRjtBQU5ELGdDQU1DIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgY2RrIGZyb20gJ0Bhd3MtY2RrL2NvcmUnO1xuaW1wb3J0IHsgTXlDREtBcHBTdGFjayB9IGZyb20gJy4vbXktY2RrLWFwcC1zdGFjayc7XG5cbmV4cG9ydCBjbGFzcyBNeUNES1N0YWNrIGV4dGVuZHMgY2RrLlN0YWNrIHtcbiAgY29uc3RydWN0b3Ioc2NvcGU6IGNkay5Db25zdHJ1Y3QsIGlkOiBzdHJpbmcsIHByb3BzPzogY2RrLlN0YWNrUHJvcHMpIHtcbiAgICBzdXBlcihzY29wZSwgaWQsIHByb3BzKTtcbiAgICBcbiAgICBuZXcgTXlDREtBcHBTdGFjayh0aGlzLCAnTXlDREtBcHBTdGFjaycpO1xuICB9XG59XG5cbiJdfQ==

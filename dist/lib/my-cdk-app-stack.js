@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MyCDKAppStack = void 0;
+const cdk = require("@aws-cdk/core");
+const hello_world_lambda_stack_1 = require("./hello-world-lambda-stack");
+class MyCDKAppStack extends cdk.Stack {
+    constructor(scope, id, props) {
+        super(scope, id, props);
+        new hello_world_lambda_stack_1.HelloWorldLambdaStack(this, 'HelloWorldLambdaStack');
+        // Define other stacks or resources as needed
+    }
+}
+exports.MyCDKAppStack = MyCDKAppStack;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibXktY2RrLWFwcC1zdGFjay5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL215LWNkay1hcHAtc3RhY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEscUNBQXFDO0FBQ3JDLHlFQUFtRTtBQUVuRSxNQUFhLGFBQWMsU0FBUSxHQUFHLENBQUMsS0FBSztJQUMxQyxZQUFZLEtBQW9CLEVBQUUsRUFBVSxFQUFFLEtBQXNCO1FBQ2xFLEtBQUssQ0FBQyxLQUFLLEVBQUUsRUFBRSxFQUFFLEtBQUssQ0FBQyxDQUFDO1FBRXhCLElBQUksZ0RBQXFCLENBQUMsSUFBSSxFQUFFLHVCQUF1QixDQUFDLENBQUM7UUFDekQsNkNBQTZDO0lBQy9DLENBQUM7Q0FDRjtBQVBELHNDQU9DIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgY2RrIGZyb20gJ0Bhd3MtY2RrL2NvcmUnO1xuaW1wb3J0IHsgSGVsbG9Xb3JsZExhbWJkYVN0YWNrIH0gZnJvbSAnLi9oZWxsby13b3JsZC1sYW1iZGEtc3RhY2snO1xuXG5leHBvcnQgY2xhc3MgTXlDREtBcHBTdGFjayBleHRlbmRzIGNkay5TdGFjayB7XG4gIGNvbnN0cnVjdG9yKHNjb3BlOiBjZGsuQ29uc3RydWN0LCBpZDogc3RyaW5nLCBwcm9wcz86IGNkay5TdGFja1Byb3BzKSB7XG4gICAgc3VwZXIoc2NvcGUsIGlkLCBwcm9wcyk7XG4gICAgXG4gICAgbmV3IEhlbGxvV29ybGRMYW1iZGFTdGFjayh0aGlzLCAnSGVsbG9Xb3JsZExhbWJkYVN0YWNrJyk7XG4gICAgLy8gRGVmaW5lIG90aGVyIHN0YWNrcyBvciByZXNvdXJjZXMgYXMgbmVlZGVkXG4gIH1cbn1cblxuIl19
